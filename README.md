@@ -1,6 +1,11 @@
-# AngularSpringbootApp
+# Angular Spring boot App
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.3.
+- This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.3.
+
+## To Do's
+- Finish front-end 
+- Setup back-end with spring boot
+- Make a setup guide 
 
 ## Development server
 
