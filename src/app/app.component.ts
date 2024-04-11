@@ -1,21 +1,26 @@
 import { Component } from '@angular/core';
 import { HomeComponent } from './home/home.component';
 
+
 @Component({
-selector: 'app-root',
-standalone: true,
-imports: [
-  HomeComponent],
-template:  `
-  <section>
-    <form>
-    <input type="text" placeholder="Filter by city">
-    <button class="primary" type="button"> Search </button>
-    </form>
-  </section>
-`,
-styleUrls: ['./app.component.css'],
-})
-export class AppComponent {
-title = 'homes';
+  selector: 'app-root',
+  standalone: true,
+  imports: [
+    HomeComponent,
+  ],
+  template:`
+    <main>
+      <header class="brand-name">
+        <H1 id="host"> Lets find a home! </H1>
+        <img class="brand-logo" src="/assets/img/pp23.svg" alt="logo" aria-hidden="true">
+      </header>
+      <section class="content">
+        <app-home></app-home>
+      </section>
+    </main>
+  `,
+  styleUrls: ['./app.component.css'],
+  })
+  export class AppComponent {
+  title = 'homes';
 }

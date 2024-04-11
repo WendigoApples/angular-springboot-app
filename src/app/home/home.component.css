@@ -14,13 +14,14 @@ input[type="text"] {
   margin-right: 4px;
   display: inline-block;
   width: 30%;
+  color: black;
 }
 
 button {
   padding: 10px;
   border: solid 1px var(--primary-color);
   background: var(--primary-color);
-  color: white;
+  color: Green;
   border-radius: 8px;
 }
 
