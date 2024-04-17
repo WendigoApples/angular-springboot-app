@@ -2,21 +2,28 @@ import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { HousingLocationComponent } from '../housing-location/housing-location.component';
 import { HousingLocation } from '../housinglocation';
+import { ButtonOverviewComponent } from '../button-overview/button-overview.component';
 
 @Component({
   selector: 'app-home',
   standalone: true,
   imports: [
     CommonModule,
-    HousingLocationComponent
+    HousingLocationComponent,
+    ButtonOverviewComponent,
     ],
   template: `
+
+    <app-button-overview></app-button-overview>
+
+
     <section class="content">
       <form>
         <input type="text" placeholder="Filter by city">
         <button class="primary" type="button">Search</button>
       </form>
     </section>
+
     <section class="results">
       <app-housing-location
       *ngFor="let housingLocation of housingLocationList"
