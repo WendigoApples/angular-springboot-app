@@ -6,6 +6,7 @@
 .listing-heading {
   color: var(--primary-color);
   padding: 10px 20px 0 20px;
+  font-family: monospace;
 }
 .listing-photo {
   height: 250px;
@@ -29,3 +30,14 @@ section.listing a::after {
   content: "\203A";
   margin-left: 5px;
 }
+
+
+/* Background color*/
+.listing[_ngcontent-ng-c1744737690] {
+    background: var(--accent-color);
+    border-radius: 30px;
+    padding-bottom: 30px;
+    background-color: cadetblue;
+}
+
+/* Background color*/

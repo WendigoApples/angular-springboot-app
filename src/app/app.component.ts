@@ -10,8 +10,13 @@ import { HomeComponent } from './home/home.component';
   ],
   template:`
     <main>
+    <head>
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Honk&display=swap" rel="stylesheet">
+    </head>
       <header class="brand-name">
-        <H1 id="host"> Lets find a home! </H1>
+        <H1 id="host" class="mainH1"> Lets find a home! </H1>
         <img class="brand-logo" src="/assets/img/pp23.svg" alt="logo" aria-hidden="true">
       </header>
       <section class="content">
