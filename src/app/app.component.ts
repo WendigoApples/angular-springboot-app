@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { HomeComponent } from './home/home.component';
+import { RouterModule } from '@angular/router';
 
 
 @Component({
@@ -7,6 +8,7 @@ import { HomeComponent } from './home/home.component';
   standalone: true,
   imports: [
     HomeComponent,
+    RouterModule,
   ],
   template:`
     <main>
@@ -20,7 +22,7 @@ import { HomeComponent } from './home/home.component';
         <img class="brand-logo" src="/assets/img/pp23.svg" alt="logo" aria-hidden="true">
       </header>
       <section class="content">
-        <app-home></app-home>
+        <router-outlet></router-outlet>
       </section>
     </main>
   `,
